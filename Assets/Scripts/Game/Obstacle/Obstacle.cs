@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    [SerializeField] private GameGuide _gameGuide;
+
     [SerializeField] private Animator _animator;
     [SerializeField] private string _floatingBool;
 
@@ -12,7 +14,13 @@ public class Obstacle : MonoBehaviour
 
     private void OnEnable()
     {
+        _gameGuide.GuideCompleate += OnGuideCompleate;
         _obstacleChecker.ObstacleDetected += OnObstacleDetected;
+    }
+
+    private void OnGuideCompleate()
+    {
+        _animator.SetBool(_floatingBool, true);
     }
 
     private void OnObstacleDetected()
@@ -23,5 +31,6 @@ public class Obstacle : MonoBehaviour
     private void OnDisable()
     {
         _obstacleChecker.ObstacleDetected -= OnObstacleDetected;
+        _gameGuide.GuideCompleate -= OnGuideCompleate;
     }
 }
