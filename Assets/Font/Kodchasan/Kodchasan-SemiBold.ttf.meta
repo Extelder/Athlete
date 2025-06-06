@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0466def13b4eb454692bd16dab21b2ab
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kodchasan
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 73c4fe281570f51478aae021c8006a4d, type: 3}
+  - {fileID: 12800000, guid: 62a199ce9c77a5d46848fdfa1692f0e3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
